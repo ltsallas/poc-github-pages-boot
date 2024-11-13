@@ -4,6 +4,7 @@ plugins {
 	id("org.springframework.boot") version "3.3.5"
 	id("io.spring.dependency-management") version "1.1.6"
 	id("org.jetbrains.dokka") version "1.9.20"
+	id("project-report")
 }
 // Adjust jackson-version from 2.16 for dokka to work. See https://github.com/Kotlin/dokka/issues/3472
 ext["jackson-bom.version"] = "2.15.3"
