@@ -1,0 +1,8 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.example.demo////PointingToDeclaration/demo/com.example.demo/index.html
+$dokka.location:com.example.demo//main/#kotlin.Array[kotlin.String]/PointingToDeclaration/demo/com.example.demo/main.html
+$dokka.location:com.example.demo/DemoApplication///PointingToDeclaration/demo/com.example.demo/-demo-application/index.html
+$dokka.location:com.example.demo/DemoApplication/DemoApplication/#/PointingToDeclaration/demo/com.example.demo/-demo-application/-demo-application.html
+com.example.demo
+
