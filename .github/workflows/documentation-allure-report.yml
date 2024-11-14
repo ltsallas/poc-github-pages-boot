@@ -27,20 +27,26 @@ jobs:
         continue-on-error: true
         with:
           ref: gh-pages
-          path: gh-pages/bingo
+          path: gh-pages
 
       - name: Build test report
         uses: simple-elf/allure-report-action@v1.10
         if: always()
         with:
           gh_pages: gh-pages
-          allure_history: bingo/allure-history
+          allure_history: allure-history
           allure_results: build/allure-results
 
-      - name: Publish test report
-        uses: peaceiris/actions-gh-pages@v4
-        if: always()
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: bingo/allure-history
+#      - name: Publish test report
+#        uses: peaceiris/actions-gh-pages@v4
+#        if: always()
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          publish_branch: gh-pages
+#          publish_dir: allure-history
+
+#      - name: Deploy Allure reports HTML
+#        uses: JamesIves/github-pages-deploy-action@v4
+#        with:
+#          folder: allure-hostory
+#          target-folder: bingo
