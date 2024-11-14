@@ -50,4 +50,3 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: allure-history
-          target-folder: bingo
