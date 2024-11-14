@@ -31,11 +31,11 @@ jobs:
 
       - name: Build test report
         uses: simple-elf/allure-report-action@v1.10
-        working-directory: bingo
         if: always()
         with:
           gh_pages: gh-pages
           allure_history: allure-history
+          subfolder: bingo
           allure_results: build/allure-results
 
 #      - name: Publish test report
