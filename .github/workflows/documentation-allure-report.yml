@@ -1,4 +1,4 @@
-name: Documentation Gradle Dependencies
+name: Documentation Allure report
 on:
   workflow_dispatch:
 jobs:
