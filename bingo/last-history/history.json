@@ -1,0 +1,1 @@
+{"ec22e5b77858497c179e24ead9677d8":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"f20faf3cb62f474f","reportUrl":"https://ltsallas.github.io/poc-github-pages-boot/bingo/17//#testresult/f20faf3cb62f474f","status":"passed","time":{"start":1731624801967,"stop":1731624802705,"duration":738}}]}}
