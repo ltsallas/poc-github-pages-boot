@@ -11,7 +11,14 @@ ext["jackson-bom.version"] = "2.15.3"
 
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
+val allureVersion = "2.25.0"
+val aspectJVersion = "1.9.21"
 
+// Define configuration for AspectJ agent
+val agent: Configuration by configurations.creating {
+	isCanBeConsumed = true
+	isCanBeResolved = true
+}
 java {
 	toolchain {
 		languageVersion = JavaLanguageVersion.of(21)
@@ -33,6 +40,11 @@ dependencies {
 	testImplementation("org.testcontainers:junit-jupiter")
 	testImplementation("org.testcontainers:postgresql")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	// Import allure-bom to ensure correct versions of all the dependencies are used
+	testImplementation(platform("io.qameta.allure:allure-bom:$allureVersion"))
+	// Add necessary Allure dependencies to dependencies section
+	testImplementation("io.qameta.allure:allure-junit5")
+	agent("org.aspectj:aspectjweaver:${aspectJVersion}")
 }
 
 kotlin {
