@@ -45,8 +45,8 @@ jobs:
 #          publish_branch: gh-pages
 #          publish_dir: allure-history
 
-#      - name: Deploy Allure reports HTML
-#        uses: JamesIves/github-pages-deploy-action@v4
-#        with:
-#          folder: allure-hostory
-#          target-folder: bingo
+      - name: Deploy Allure reports HTML
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: allure-history
+          target-folder: bingo
